@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="./css/main.css" />
+	<title>ToDo App</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<header class="header">
+			<div class="title display-4 mb-5">ToDo App</div>
+		</header>
+		<div class="card bg-light mb-2">
+			<div class="card-header">Add new task</div>
+			<div class="card-body">
+				<form id="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="taskInput" placeholder="Describe the task" required>
+						<small id="emailHelp" class="form-text text-muted">Here you can describe your task briefly or in
+							detail.</small>
+					</div>
+					<div class="buttons">
+						<button type="submit" class="btn btn-dark  btn-lg active">Add</button>
+						<button type="button" id="clear-btn" class="btn btn-secondary btn-lg active">Clear finished</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+		<div class="card">
+			<ul id="tasksList" class="list-group list-group-flush">
+				<li id="emptyList" class="list-group-item empty-list">
+					<i class="bi bi-emoji-frown"></i>
+					<div class="empty-list__title pt-3">Currently your ToDo List is empty</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./js/main.js"></script>
+</body>
+
+</html>
